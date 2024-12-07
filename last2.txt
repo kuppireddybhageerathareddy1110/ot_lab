@@ -1,0 +1,9 @@
+x1 = 4;
+V_prime_x1 = 4*x1^3 - 9*x1^2;
+V_double_prime_x1 = 12*x1^2 - 18*x1;
+x2 = x1 - V_prime_x1 / V_double_prime_x1;
+x3 = x2 - (4*x2^3 - 9*x2^2) / (12*x2^2 - 18*x2);
+x4 = x3 - (4*x3^3 - 9*x3^2) / (12*x3^2 - 18*x3);
+fprintf('x2 = %.6f\n', x2);
+fprintf('x3 = %.6f\n', x3);
+fprintf('x4 = %.6f\n', x4);
